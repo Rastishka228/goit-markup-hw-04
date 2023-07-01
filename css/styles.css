@@ -180,11 +180,12 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/office.jpg);
-  min-width: 1440px;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   align-items: center;
+  margin: 0 auto;
 }
 
 .hero-title {

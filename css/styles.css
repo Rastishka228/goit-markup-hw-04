@@ -124,7 +124,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-line::after {
-  content: "     ";
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -184,6 +184,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  align-items: center;
 }
 
 .hero-title {
@@ -328,6 +329,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.svg-icon {
+  fill: var(--bg-ligt-grey-color);
 }
 .social-icons:hover,
 .social-icons:focus {

@@ -21,6 +21,8 @@
   --bg-btn-hover-filtres: #404bbf;
 
   --border-color-filtres-btn: #e7e9fc;
+  --border-customers-color: #8e8f99;
+  --footer-messenger-color: #31d0aa;
 }
 
 /* Common stules */
@@ -330,11 +332,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--bg-ligt-grey-color);
 }
 .svg-icon {
   fill: var(--bg-ligt-grey-color);
 }
-.social-icons:hover,
+.social-icons:hover {
+  background-color: var(--bg-btn-hover-filtres);
+}
 .social-icons:focus {
   background-color: var(--bg-btn-hover-filtres);
 }
@@ -353,12 +359,53 @@ body {
   font-weight: 400;
   text-align: center;
 }
-
+/* Customers Section */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  counter-reset: var(--bg-dark-color);
+  margin-bottom: 72px;
+  text-align: center;
+}
+.customers-container {
+  display: flex;
+  gap: 24px;
+}
+.customers-icons {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.customers-icn {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border-customers-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--border-customers-color);
+}
+.customers-icn:hover,
+.customers-icn:focus {
+  color: var(--bg-btn-hover);
+  border-color: var(--bg-btn-hover);
+}
+.our-customers {
+  fill: currentColor;
+}
 /* Footer section */
 
 .footer {
   background-color: var(--bg-dark-color);
   padding: 100px 0;
+}
+.footer-ctr {
+  display: flex;
+  align-items: baseline;
 }
 .ftr {
   display: inline-block;
@@ -368,6 +415,36 @@ body {
   font-weight: 400;
   color: var(--text-footer-color);
   max-width: 264px;
+}
+.footer-logo {
+  margin-right: 120px;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--bg-color);
+  margin-bottom: 16px;
+}
+.footer-icons {
+  display: flex;
+  gap: 16px;
+}
+.footer-messenger {
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-button-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--bg-ligt-grey-color);
+}
+.footer-messenger:hover,
+.footer-messenger:focus {
+  background-color: var(--footer-messenger-color);
 }
 
 /* Portfolio */

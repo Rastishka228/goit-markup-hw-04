@@ -91,6 +91,9 @@ body {
 .header {
   border-bottom: 1px solid var(--border-color-filtres-btn);
   align-items: center;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .div-container {
   display: flex;
@@ -106,7 +109,6 @@ body {
 .header-nav-list {
   gap: 40px;
   display: flex;
-  margin: 0 auto;
 }
 
 .header-nav-link {
@@ -114,10 +116,27 @@ body {
 }
 .hnl {
   padding: 24px 0 24px;
+  position: relative;
+}
+.header-line {
+  position: relative;
+  color: var(--text-hover-link-blue);
+}
+.header-line::after {
+  content: "     ";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--text-hover-link-blue);
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus {
+.hnl:hover,
+.hnl:focus {
   color: var(--text-hover-link-blue);
 }
 
@@ -137,9 +156,15 @@ body {
   gap: 40px;
 }
 
-.header-address-link:hover,
-.header-address-link:focus {
+.header-contact:hover,
+.header-contact:focus {
   color: var(--text-hover-link-blue);
+}
+.header-contact {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clr-cntct {
+  color: var(--text-main-color);
 }
 
 /* Main */
@@ -153,6 +178,15 @@ body {
   background-color: var(--bg-dark-color);
   padding: 188px 0;
   max-height: 600px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/offise.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -182,6 +216,7 @@ body {
   cursor: pointer;
   margin: 0 auto;
   margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,

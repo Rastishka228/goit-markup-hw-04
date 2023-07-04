@@ -392,17 +392,20 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .customers-icn:hover,
 .customers-icn:focus {
   color: var(--bg-btn-hover);
   border-color: var(--bg-btn-hover);
 }
-.customers-icn:hover .our-customers {
-  fill: var(--bg-btn-hover);
-}
 .our-customers {
   fill: currentColor;
 }
+.customers-icn:hover,
+.customers-icn:focus .our-customers {
+  fill: var(--bg-btn-hover);
+}
+
 /* Footer section */
 
 .footer {

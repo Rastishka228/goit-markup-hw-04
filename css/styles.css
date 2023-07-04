@@ -392,14 +392,13 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-icn:hover {
-  color: var(--bg-btn-hover);
-  border-color: var(--bg-btn-hover);
-}
-
+.customers-icn:hover,
 .customers-icn:focus {
   color: var(--bg-btn-hover);
   border-color: var(--bg-btn-hover);
+}
+.customers-icn:hover .our-customers {
+  fill: var(--bg-btn-hover);
 }
 .our-customers {
   fill: currentColor;
@@ -424,7 +423,7 @@ body {
   max-width: 264px;
 }
 .footer-logo {
-  padding-right: 120px;
+  margin-right: 120px;
 }
 .footer-title {
   font-weight: 500;

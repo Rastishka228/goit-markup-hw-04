@@ -372,11 +372,9 @@ body {
   font-size: 36px;
   line-height: 1.11;
   margin-bottom: 72px;
-  font-weight: 700;
   line-height: 40px;
   text-align: center;
   color: var(--bg-dark-color);
-  text-transform: capitalize;
 }
 .customers-container {
   display: flex;

@@ -424,15 +424,16 @@ body {
   margin-bottom: 16px;
 }
 .footer-text {
-  margin: 0;
   font-weight: 400;
   color: var(--text-footer-color);
   max-width: 264px;
+  margin-bottom: 16px;
 }
 .footer-logo {
   margin-right: 120px;
 }
 .footer-title {
+  margin: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
